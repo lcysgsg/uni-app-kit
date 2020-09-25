@@ -1,9 +1,16 @@
 # uniapp-cli
 
-## 环境变量和模式
-> [详情查看 Vue CLI 环境变量和模式](https://cli.vuejs.org/zh/guide/mode-and-env.html#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%92%8C%E6%A8%A1%E5%BC%8F)
+## 开发须知
+
+### [Vue CLI 环境变量和模式](https://cli.vuejs.org/zh/guide/mode-and-env.html#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%92%8C%E6%A8%A1%E5%BC%8F)
 
 之所以使用这种模式，是因为不同环境下的配置加载开销将只在编译阶段消耗。
+
+### [使用cli创建项目和使用HBuilderX可视化界面创建项目有什么区别](https://uniapp.dcloud.net.cn/quickstart?id=%e4%bd%bf%e7%94%a8cli%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e5%92%8c%e4%bd%bf%e7%94%a8hbuilderx%e5%8f%af%e8%a7%86%e5%8c%96%e7%95%8c%e9%9d%a2%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e6%9c%89%e4%bb%80%e4%b9%88%e5%8c%ba%e5%88%ab)
+
+使用 cli 创建项目后， 编译器版本需要手动更新。（TODO：具体更新流程待测试）
+
+可以固定使用项目完结时的编译器版本，保证项目稳定。
 
 ## Project setup
 ```
