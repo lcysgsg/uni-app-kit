@@ -1,4 +1,5 @@
-# uniapp-cli
+## TODOs
+- [ ] 确定 uni-app 的全平台更新是稳定可行的
 
 ## Features
 - uniapp api 智能提示
