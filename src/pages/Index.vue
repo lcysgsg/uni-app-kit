@@ -1,23 +1,6 @@
 <template>
   <view class="content">
-    <image
-      class="logo f"
-      src="/static/logo.png"
-      sr2c="/static/logo.png"
-      @click="say"
-    ></image>
-    <view>
-      <text
-        :class="
-          title
-            ? 'qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwer'
-            : 'asdfasdfasdfasdfasdfasdfasdfasdfasdf'
-        "
-        class="title"
-      >
-        {{ title }}
-      </text>
-    </view>
+    <image class="logo f" src="/static/logo.png" @click="say"></image>
   </view>
 </template>
 
