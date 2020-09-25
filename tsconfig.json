@@ -15,7 +15,11 @@
       "@dcloudio/types",
       "miniprogram-api-typings",
       "mini-types"
-    ]
+    ],
+
+    // https://github.com/microsoft/TypeScript/issues/25460
+    // fix: 'File name differs from already included file name only in casing' on relative path with same casing
+    "forceConsistentCasingInFileNames": false,
   },
   "exclude": [
     "node_modules",
