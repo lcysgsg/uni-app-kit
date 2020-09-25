@@ -1,5 +1,10 @@
 # uniapp-cli
 
+## Features
+- uniapp api 智能提示
+- uniapp tag 属性提示
+- tailwindcss
+
 ## 开发须知
 
 ### [Vue CLI 环境变量和模式](https://cli.vuejs.org/zh/guide/mode-and-env.html#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%92%8C%E6%A8%A1%E5%BC%8F)
