@@ -59,6 +59,7 @@
     "@vue/shared": "^3.0.0-rc.4",
     "axios": "^0.20.0",
     "axios-adapter-uniapp": "^0.0.1",
+    "blueimp-md5": "^2.18.0",
     "core-js": "^3.6.5",
     "dayjs": "^1.8.36",
     "flyio": "^0.6.2",
