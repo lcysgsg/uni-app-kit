@@ -4,7 +4,18 @@ module.exports = {
     es2020: true,
     node: true,
   },
-  extends: ['plugin:vue/recommended', 'eslint:recommended', 'plugin:prettier/recommended', 'prettier/vue'],
+  globals: {
+    wx: 'readonly', // wx mini program
+    my: 'readonly', // ali mini program
+    uni: 'readonly', // uni
+    plus: 'readonly', // uni
+  },
+  extends: [
+    'plugin:vue/recommended',
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'prettier/vue',
+  ],
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module',
