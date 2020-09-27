@@ -1,4 +1,4 @@
-import md5 from "blueimp-md5";
+import md5 from 'blueimp-md5'
 
 /**
  * 判断无效参数, null、undefined、'' 会
@@ -6,7 +6,7 @@ import md5 from "blueimp-md5";
  * @param {number|string} val
  */
 export function isValidParam(val) {
-  return val !== null && val !== undefined && val !== "";
+  return val !== null && val !== undefined && val !== ''
 }
 
 /**
@@ -14,18 +14,18 @@ export function isValidParam(val) {
  * @param {object} params get的query参数， post的query、body参数
  */
 export function generateSign(params, signKey) {
-  let keyArrSort = Object.keys(params).sort();
-  let sign = "";
+  let keyArrSort = Object.keys(params).sort()
+  let sign = ''
   keyArrSort.forEach((key) => {
     if (isValidParam(params[key])) {
-      sign += `${key}=${params[key]}&`;
+      sign += `${key}=${params[key]}&`
     }
-  });
+  })
 
-  sign = sign.substr(0, sign.length - 1);
-  sign = (sign + signKey).trim();
+  sign = sign.substr(0, sign.length - 1)
+  sign = (sign + signKey).trim()
   // console.log('sign: ', sign)
-  return md5(sign);
+  return md5(sign)
 }
 
 /**
@@ -33,23 +33,23 @@ export function generateSign(params, signKey) {
  * @param {object} params 对象
  */
 export function filterObjectNullVal(params) {
-  const result = {};
+  const result = {}
   for (const key in params) {
     if (Object.prototype.hasOwnProperty.call(params, key)) {
       if (isValidParam(key)) {
-        result[key] = params[key];
+        result[key] = params[key]
       }
     }
   }
-  return result;
+  return result
 }
 
 export function isUploadFile(config) {
   if (config.filePath && config.name) {
-    return true;
+    return true
   }
   if (config.files) {
-    return true;
+    return true
   }
-  return false;
+  return false
 }
