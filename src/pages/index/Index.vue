@@ -1,25 +1,24 @@
 <template>
   <view class="content">
-    <image class="logo f" src="/static/logo.png" @click="say"></image>
+    <image class="logo" src="/static/logo.png"></image>
   </view>
 </template>
 
 <script>
 export default {
+  components: {},
   data() {
-    return {
-      title: 'Hello',
-    }
+    return {}
   },
-  methods: {
-    say() {
-      console.log('hi')
-    },
-  },
+  computed: {},
+  watch: {},
+  created() {},
+  mounted() {},
+  methods: {},
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .content {
   display: flex;
   flex-direction: column;
