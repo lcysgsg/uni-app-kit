@@ -1,6 +1,9 @@
 <template>
-  <view class="content">
+  <view class="content bg-red-400">
     <image class="logo" src="/static/logo.png"></image>
+    {{ msg }}
+
+    <navigator url="./ListMescroll">ListMescroll</navigator>
   </view>
 </template>
 
@@ -8,7 +11,9 @@
 export default {
   components: {},
   data() {
-    return {}
+    return {
+      msg: 'hi',
+    }
   },
   computed: {},
   watch: {},
@@ -30,15 +35,5 @@ export default {
   height: 200rpx;
   width: 200rpx;
   margin: 200rpx auto 50rpx auto;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
 }
 </style>
