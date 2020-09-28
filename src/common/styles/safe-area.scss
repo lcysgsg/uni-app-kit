@@ -1,0 +1,12 @@
+.top-safe-0 {
+  top: calc(var(--window-top) + env(safe-area-inset-top, 0));
+}
+.right-safe-0 {
+  right: calc(var(--window-top) + env(safe-area-inset-right, 0));
+}
+.bottom-safe-0 {
+  bottom: calc(var(--window-top) + env(safe-area-inset-bottom, 0));
+}
+.left-safe-0 {
+  left: calc(var(--window-top) + env(safe-area-inset-left, 0));
+}

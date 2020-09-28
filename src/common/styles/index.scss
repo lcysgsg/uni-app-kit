@@ -8,6 +8,9 @@
 @import '~tailwindcss/components';
 @import '~tailwindcss/utilities';
 
+// helper
+@import './safe-area';
+
 /**
  * truncate multiple lines start
  */
