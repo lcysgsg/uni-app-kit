@@ -8,5 +8,28 @@
 @import '~tailwindcss/components';
 @import '~tailwindcss/utilities';
 
-// iconfont
-@import './iconfont/index';
+/**
+ * truncate multiple lines start
+ */
+%truncate-multi-lines {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.truncate-2-lines {
+  @extend %truncate-multi-lines;
+  max-height: 3.6em; /* multiple the size of line-height */
+  -webkit-line-clamp: 2;
+}
+.truncate-3-lines {
+  @extend %truncate-multi-lines;
+  max-height: 5.4em; /* multiple the size of line-height */
+  -webkit-line-clamp: 3;
+}
+.truncate-4-lines {
+  @extend %truncate-multi-lines;
+  max-height: 7.2em; /* multiple the size of line-height */
+  -webkit-line-clamp: 4;
+}
+// truncate multiple lines start
+
