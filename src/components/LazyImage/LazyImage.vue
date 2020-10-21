@@ -24,7 +24,7 @@ export default {
     },
     placeholdSrc: {
       type: String,
-      default: require('./img-placeholder.jpg'),
+      default: require('@/static/img-placeholder.jpg'),
     },
     src: {
       type: String,
