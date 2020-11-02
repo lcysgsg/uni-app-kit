@@ -1,35 +1,47 @@
 // common style
 
-// iconfont
-@import './iconfont/index';
-
-// load tailwindcss
-@import '~tailwindcss/base'; // Built on top of [normalize.css](https://github.com/necolas/normalize.css/)
-@import '~tailwindcss/components';
-@import '~tailwindcss/utilities';
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
 
 /**
- * truncate multiple lines start
- */
-%truncate-multi-lines {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
-.truncate-2-lines {
-  @extend %truncate-multi-lines;
-  max-height: 3.6em; /* multiple the size of line-height */
-  -webkit-line-clamp: 2;
-}
-.truncate-3-lines {
-  @extend %truncate-multi-lines;
-  max-height: 5.4em; /* multiple the size of line-height */
-  -webkit-line-clamp: 3;
-}
-.truncate-4-lines {
-  @extend %truncate-multi-lines;
-  max-height: 7.2em; /* multiple the size of line-height */
-  -webkit-line-clamp: 4;
-}
-// truncate multiple lines start
+  * This injects Tailwind's component classes and any component classes
+  * registered by plugins.
+  */
+@tailwind components;
 
+/**
+  * This injects Tailwind's utility classes and any utility classes registered
+  * by plugins.
+  */
+@tailwind utilities;
+
+/**
+  * Use this directive to control where Tailwind injects the responsive
+  * variations of each utility.
+  *
+  * If omitted, Tailwind will append these classes to the very end of
+  * your stylesheet by default.
+  */
+@tailwind screens;
+
+@import './layer-utilities';
+@import './iconfont/index';
+
+page {
+  font-size: 28rpx;
+  background-color: #fff;
+  font-family:
+    'PingFang SC',
+    'Hiragino Sans GB',
+    'Source Han Sans CN',
+    'Heiti SC',
+    'Microsoft YaHei',
+    'WenQuanYi Micro Hei',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial',
+    sans-serif;
+}

@@ -1,5 +1,7 @@
 ## TODOs
 
+- [ ] store 统一管理定位
+
 ## Features
 
 - axios，靠一个 axios 的 uni adapter 实现——[axios-adapter-uniapp](https://www.npmjs.com/package/axios-adapter-uniapp)
@@ -48,8 +50,8 @@
         |       |-- index.scss
         |       |-- iconfont
         |-- components
-        |   |-- jyf-parser  # 富文本解析组件
-        |   |-- LazyImage   # 图片懒加载组件
+        |   |-- jyf-parser  # 富文本解析
+        |   |-- LazyImage   # 图片加载
         |-- pages           # 业务页面文件存放的目录
         |   |-- index
         |       |-- Index.vue
