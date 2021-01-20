@@ -4,9 +4,9 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: ['./src/**/*.html', './src/**/*.vue', './src/**/*.js'],
-  theme: {
-    extend: {},
-  },
-  variants: {},
+  theme: {},
+
+  // 数组即白名单式，移动端不需要 variants
+  variants: [],
   plugins: [],
 }
