@@ -3,7 +3,9 @@
 ## Features
 
 - axios，靠一个 axios 的 uni adapter 实现——[axios-adapter-uniapp](https://www.npmjs.com/package/axios-adapter-uniapp)
-- 集成 [tailwindcss](https://tailwindcss.com/)
+- 集成 [tailwindcss](https://tailwindcss.com/)，但是为了兼容多平台，部分 css 语法不支持，所以使用 `postcss-uni-tailwind` 插件做了处理。
+  - `replace(/\\:/g, '_')`
+  - `replace(':not(template) ~ :not(template)', 'view + view')`
 - [开发时的智能提示](#智能提示)
 
 ## 目录结构
