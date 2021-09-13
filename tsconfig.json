@@ -11,13 +11,15 @@
     "experimentalDecorators":true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
     "types": [
       "webpack-env",
       "@dcloudio/types",
       "miniprogram-api-typings",
       "mini-types"
     ],
+    "allowJs": true,
+    "outDir": "unpackage",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"

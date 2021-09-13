@@ -84,16 +84,32 @@
     "@vue/cli-service": "~4.5.0",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.17.0",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "node-sass": "4",
     "postcss-comment": "^2.0.0",
+    "prettier": "^2.4.0",
+    "sass-loader": "10",
+    "stylelint": "^13.13.1",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-no-unsupported-browser-features": "^5.0.1",
+    "stylelint-scss": "^3.20.1",
     "typescript": "^3.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
     "Android >= 4",
-    "ios >= 8"
+    "ios >= 8",
+    "> 5%",
+    "Last 2 versions"
   ],
   "uni-app": {
     "scripts": {}
