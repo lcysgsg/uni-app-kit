@@ -12,13 +12,13 @@
  *   => 几秒前
  */
 
-import dayjs from 'dayjs'
-import 'dayjs/locale/zh-cn'
-import dayjsRelativeTime from 'dayjs/plugin/relativeTime'
-import dayjsUpdateLocale from 'dayjs/plugin/updateLocale'
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn';
+import dayjsRelativeTime from 'dayjs/plugin/relativeTime';
+import dayjsUpdateLocale from 'dayjs/plugin/updateLocale';
 
-dayjs.extend(dayjsUpdateLocale)
-dayjs.extend(dayjsRelativeTime)
+dayjs.extend(dayjsUpdateLocale);
+dayjs.extend(dayjsRelativeTime);
 
 dayjs.updateLocale('zh-cn', {
   relativeTime: {
@@ -36,6 +36,6 @@ dayjs.updateLocale('zh-cn', {
     y: '1年',
     yy: '%d年',
   },
-})
+});
 
-export default dayjs
+export default dayjs;
