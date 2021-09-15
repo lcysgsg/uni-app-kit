@@ -23,8 +23,12 @@ module.exports = {
 
     // https://www.npmjs.com/package/stylelint-scss
     // recommended rules
-    'at-rule-no-unknown': null,
-    // 'scss/at-rule-no-unknown': true,
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
+      },
+    ],
   },
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
 };
