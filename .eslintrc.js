@@ -10,10 +10,18 @@ module.exports = {
     uni: 'readonly', // uni
     plus: 'readonly', // uni
   },
-  extends: ['plugin:vue/recommended', 'eslint:recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'plugin:vue/recommended',
+    'eslint:recommended',
+    '@vue/typescript/recommended',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint',
+  ],
   rules: {
     // 未使用声明，方便调试
     'no-unused-vars': 'warn',
+
+    '@typescript-eslint/no-empty-function': ['off'],
 
     'prettier/prettier': [
       'warn',
