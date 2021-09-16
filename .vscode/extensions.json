@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "stylelint.vscode-stylelint",
+        "modyqyw.vscode-uni-app-schemas",
+        "modyqyw.vscode-uni-app-snippets",
+        "octref.vetur"
+    ]
+}
