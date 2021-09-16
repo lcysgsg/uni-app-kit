@@ -1,5 +1,11 @@
 # uni-app-kit
 
+## TODO
+
+- [ ] 请求库
+  - [axios](https://www.npmjs.com/package/axios) + [axios-adapter-uniapp](https://www.npmjs.com/package/axios-adapter-uniapp)
+- [ ] `LazyImage` 图片组件，统一行为
+
 ## 特性
 
 - 支持 TypeScript
