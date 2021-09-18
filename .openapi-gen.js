@@ -41,12 +41,7 @@ module.exports = [
   // };
   {
     projectName: 'api',
-    schemaPath: 'http://192.168.1.251:7000/working/v3/api-docs/api',
-    requestLibPath: "import request from '@/utils/request'",
-  },
-  {
-    projectName: 'hk',
-    schemaPath: 'http://192.168.1.251:7000/working/v3/api-docs/hk',
-    requestLibPath: "import request from '@/utils/request'",
+    schemaPath: 'http://zhidianzuishuai.local:10000/construction/v3/api-docs/api',
+    requestLibPath: "import { request } from '@/utils/request'",
   },
 ];
