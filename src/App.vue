@@ -14,9 +14,12 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style lang="scss">
 /* 每个页面公共css */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import './uni_modules/uview-ui/index.scss';
+@import '@/static/icon/iconfont.css';
 </style>
