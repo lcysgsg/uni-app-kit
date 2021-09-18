@@ -56,38 +56,34 @@ const pluginTailwind4uniapp = postcss.plugin('postcss-tailwind4uniapp', () => (r
   // : 替换成 _
   // .5 替换成 _half
   // / 替换成 _
-  // root.walkRules((postrule) => {
-  // 规则替换
-  // postrule.walkDecls((decl) => {
-  //   covertRule.forEach((v) => {
-  //     const _times = units[`${v.key}2${v.covert}`];
-  //     const _regx = new RegExp(`([\\d\\.]+)${v.key}`);
-  //     if (_regx.test(decl.value) && typeof _times === 'number') {
-  //       const _m = decl.value.match(_regx);
-  //       if (_m[1] > threshold[platform]) {
-  //         decl.value = decl.value.replace(_m[0], `${_m[1] * _times}${v.covert}`);
-  //       }
-  //     }
-  //   });
-  //   // PX to px
-  //   if (/PX$/.test(decl.value)) {
-  //     const _m = decl.value.match(/([\d.]+)PX/);
-  //     decl.value = decl.value.replace(_m[0], parseFloat(_m[1]) + 'px');
-  //   }
-  // });
-  // 替换:为_
-  // if (postrule.selector.includes('\\:')) {
-  //   postrule.selectors = postrule.selectors.map((v) => v.replace(/\\:/g, '_'));
-  // }
-  // 替换.为dot
-  // if (postrule.selector.includes('\\.')) {
-  //   postrule.selectors = postrule.selectors.map((v) => v.replace(/\\\./g, 'dot'));
-  // }
-  // // 替换/为on
-  // if (postrule.selector.includes('\\/')) {
-  //   postrule.selectors = postrule.selectors.map((v) => v.replace(/\\\//g, 'on'));
-  // }
-  // });
+  root.walkRules((postrule) => {
+    // 规则替换
+    postrule.walkDecls((decl) => {
+      // covertRule.forEach((v) => {
+      //   const _times = units[`${v.key}2${v.covert}`];
+      //   const _regx = new RegExp(`([\\d\\.]+)${v.key}`);
+      //   if (_regx.test(decl.value) && typeof _times === 'number') {
+      //     const _m = decl.value.match(_regx);
+      //     if (_m[1] > threshold[platform]) {
+      //       decl.value = decl.value.replace(_m[0], `${_m[1] * _times}${v.covert}`);
+      //     }
+      //   }
+      // });
+      // PX to px
+      if (/PX$/.test(decl.value)) {
+        const _m = decl.value.match(/([\d.]+)PX/);
+        decl.value = decl.value.replace(_m[0], parseFloat(_m[1]) + 'px');
+      }
+    });
+    // 替换.为dot
+    if (postrule.selector.includes('\\.')) {
+      postrule.selectors = postrule.selectors.map((v) => v.replace(/\\\./g, 'dot'));
+    }
+    // 替换/为on
+    if (postrule.selector.includes('\\/')) {
+      postrule.selectors = postrule.selectors.map((v) => v.replace(/\\\//g, 'on'));
+    }
+  });
   if (platform === 'mp') {
     root.walkRules((postrule) => {
       if (postrule.parent.name === 'media') {
