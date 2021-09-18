@@ -9,6 +9,7 @@ module.exports = {
     my: 'readonly', // ali mini program
     uni: 'readonly', // uni
     plus: 'readonly', // uni
+    weex: 'readonly', // uni
   },
   extends: [
     'plugin:vue/recommended',
@@ -22,6 +23,9 @@ module.exports = {
     'no-unused-vars': 'warn',
 
     '@typescript-eslint/no-empty-function': ['off'],
+    '@typescript-eslint/ban-ts-comment': ['off'],
+    '@typescript-eslint/no-explicit-any': ['off'],
+    '@typescript-eslint/no-this-alias': ['off'],
 
     'prettier/prettier': [
       'warn',
