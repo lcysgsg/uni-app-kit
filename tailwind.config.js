@@ -3,7 +3,8 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  mode: 'jit',
+  // bug：开启后每次新增 class 要重启服务才能生效
+  // mode: 'jit',
   // These paths are just examples, customize them to match your project structure
   purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
   theme: {},

@@ -20,6 +20,7 @@ module.exports = {
     // webcomponent
     'selector-type-no-unknown': null,
     'color-hex-length': 'long',
+    'no-empty-source': null,
 
     // https://www.npmjs.com/package/stylelint-scss
     // recommended rules
@@ -30,5 +31,5 @@ module.exports = {
       },
     ],
   },
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', 'src/uni_modules/**'],
 };
